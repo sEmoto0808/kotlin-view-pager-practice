@@ -37,6 +37,8 @@ class ViewPagerHostFragment : Fragment() {
         binding = FragmentViewPagerHostBinding.inflate(inflater).apply {
 
             if (viewPagerType == ViewPagerType.ADDABLE) {
+                // リストの任意のItemページを開くこともできる。
+                // その場合はスクロールのアニメーションが入るので、`ViewPager.setCurrentItem(int, boolean)`を使う。
                 val pagerAdapter = PracticeFragmentStatePagerAdapter(childFragmentManager)
                 viewPagerPractice.adapter = pagerAdapter
 
