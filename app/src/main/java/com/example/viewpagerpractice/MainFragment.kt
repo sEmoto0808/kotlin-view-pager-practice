@@ -21,8 +21,20 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentMainBinding.inflate(inflater).apply {
+
             startButton.setOnClickListener {
-                val action = MainFragmentDirections.actionMainToViewPagerHost()
+                val action =
+                    MainFragmentDirections.actionMainToViewPagerHost(
+                        ViewPagerType.FIXED
+                    )
+                findNavController().navigate(action)
+            }
+
+            startButtonAddable.setOnClickListener {
+                val action =
+                    MainFragmentDirections.actionMainToViewPagerHost(
+                        ViewPagerType.ADDABLE
+                    )
                 findNavController().navigate(action)
             }
         }

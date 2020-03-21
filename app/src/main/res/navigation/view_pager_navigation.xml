@@ -19,5 +19,10 @@
     <fragment
         android:id="@+id/viewPagerHost"
         android:name="com.example.viewpagerpractice.ViewPagerHostFragment"
-        tools:layout="@layout/fragment_view_pager_host"/>
+        tools:layout="@layout/fragment_view_pager_host">
+
+        <argument
+            android:name="type"
+            app:argType="com.example.viewpagerpractice.ViewPagerType" />
+    </fragment>
 </navigation>

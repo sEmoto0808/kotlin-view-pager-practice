@@ -10,8 +10,12 @@
 
     <style name="AppTheme.StartButton">
         <item name="android:text">@string/main_start_button</item>
-        <item name="android:paddingStart">20dp</item>
-        <item name="android:paddingEnd">20dp</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="AppTheme.StartButton.Addable">
+        <item name="android:text">@string/main_start_button_addable</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
 </resources>
