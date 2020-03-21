@@ -3,4 +3,9 @@
 
     <!-- MainFragment -->
     <string name="main_start_button">Start with ViewPager</string>
+
+    <!-- ViewPager -->
+    <string name="view_pager_content_1">Content1</string>
+    <string name="view_pager_content_2">Content2</string>
+    <string name="view_pager_content_3">Content3</string>
 </resources>

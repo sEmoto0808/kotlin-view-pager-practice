@@ -6,25 +6,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.viewpagerpractice.adapter.PracticeFragmentPagerAdapter
+import com.example.viewpagerpractice.databinding.FragmentViewPagerContent1Binding
 import com.example.viewpagerpractice.databinding.FragmentViewPagerHostBinding
 
 /**
- * `ViewPager`をホストするFragment。
+ * Content1。
  */
-class ViewPagerHostFragment : Fragment() {
+class ViewPagerContent1Fragment : Fragment() {
 
-    private lateinit var binding: FragmentViewPagerHostBinding
+    private lateinit var binding: FragmentViewPagerContent1Binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val pagerAdapter = PracticeFragmentPagerAdapter(childFragmentManager)
-        binding = FragmentViewPagerHostBinding.inflate(inflater).apply {
-            viewPagerPractice.adapter = pagerAdapter
-        }
-
+        binding = FragmentViewPagerContent1Binding.inflate(inflater)
         return binding.root
     }
 
