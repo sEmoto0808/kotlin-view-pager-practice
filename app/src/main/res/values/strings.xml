@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ViewPagerPractice</string>
+
+    <!-- MainFragment -->
+    <string name="main_start_button">Start with ViewPager</string>
 </resources>
